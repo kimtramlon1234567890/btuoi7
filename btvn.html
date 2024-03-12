@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="baitap10.css">
+    <script src="https://unpkg.com/@phospor-icons/web"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Thêm sản phẩm </h1> 
+        <br>
+        Code: <input type="number" class="code" id="code"> <br><br>
+        Name: <input type="text" class="name" id="name"> <br><br>   
+        Imges: <input type="file" id="imageUpload" name="imageUpload" onchange="xuLyAnh()"> 
+        <img id="preview" src="" alt="Preview" style="max-width: 20px; max-height: 20px;">
+    
+        <br><br>
+        Old_price: <input type="number" name="old" id="old"> <br><br>
+        New_Price: <input type="number" name="new" id="new"><br><br>
+    
+        <div >
+            <button onclick="save()" class="bt1">Save</button>
+            <button onclick="show()" id="bt2">Show</button>
+            <button onclick="reset() " id="bt3">Reset</button>
+        </div>
+    </div>
+
+
+</br>
+    <div class="row" id="products">
+        <h2 style="text-align: center;">THỜI TRANG</h2>
+    </div>
+<script src="baitap10.js"></script>
+</body>
+</html>
